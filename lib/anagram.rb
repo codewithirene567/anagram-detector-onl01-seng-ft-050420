@@ -10,10 +10,11 @@ class Anagram
   def match(array)
     empty_array = []
     array.split("")
+    
     word.detect do |word|
       if word.sort == array.sort
       else empty_array
-        binding.pry
+        
   end
   end
   end
