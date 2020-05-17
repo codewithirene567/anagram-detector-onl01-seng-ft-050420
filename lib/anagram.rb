@@ -13,6 +13,7 @@ class Anagram
     word.detect do |word|
       if word.sort == array.sort
       else empty_array
+        binding.pry
   end
   end
   end
