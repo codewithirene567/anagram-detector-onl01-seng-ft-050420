@@ -9,12 +9,11 @@ class Anagram
   
   def match(array)
     array.select do |element| #return the array of words that makes this true
-    (@word.split("") == element.split(""))
+    (@word.split("").sort == element.split("").sort)
     binding.pry
   end
   end
-  
-  
+
   
 end
     #takes an array of possible anagrams
