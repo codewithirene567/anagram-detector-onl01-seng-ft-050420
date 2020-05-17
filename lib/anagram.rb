@@ -13,7 +13,7 @@ class Anagram
     binding.pry
   end
   end
-  end
+  
   
 end
     #takes an array of possible anagrams
