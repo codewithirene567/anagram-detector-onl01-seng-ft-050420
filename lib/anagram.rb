@@ -10,7 +10,7 @@ class Anagram
   def match(array) #["hello", "world", "zombies", "pants", "dipper"]
     array.select do |element| #return the array of words that makes this true
     (@word.split("").sort) == (element.split("").sort)
-    #@word = 
+    #@word = "diaper"
   end
   end
 
