@@ -8,7 +8,7 @@ class Anagram
   end
   
   def match(array)
-    array.select do |element|
+    array.select do |element| #return the array of words that makes this true
     (@word.split("") == element.split(""))
   end
   end
