@@ -8,7 +8,7 @@ class Anagram
   end
   
   def match(array) #["hello", "world", "zombies", "pants", "dipper"]
-    array.select do |element| #return the array of words that makes this true
+    array.select do |element| #element = "hello" which is part of the array, this line is supposed to return the word if it matches with the element
     (@word.split("").sort) == (element.split("").sort)
     #@word = "diaper"
   end
