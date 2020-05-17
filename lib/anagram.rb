@@ -22,3 +22,20 @@ end
     
 #%w(foo bar) is a shortcut for ["foo", "bar"]. Meaning it's a notation to write an array of strings separated by spaces instead of commas and without quotes around them.
 
+class Anagram
+  
+  attr_accessor :word
+  
+  def initialize(word)
+    @word = word
+  end
+  
+  def match(array_of_words)
+    
+    array_of_words.select do |element|
+      (@word.split("").sort) == (element.split("").sort)
+    end
+  end
+  
+  
+end
