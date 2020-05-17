@@ -10,6 +10,7 @@ class Anagram
   def match(array)
     array.select do |element| #return the array of words that makes this true
     (@word.split("") == element.split(""))
+    binding.pry
   end
   end
   end
